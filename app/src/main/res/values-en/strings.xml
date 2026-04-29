@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="textNotificationAboutClipboard">Result copied to clipboard</string>
+    <string name="switch_theme">Switch theme</string>
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/bgColor" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.11">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:src="?attr/themeSwitcher"
+            android:background="?attr/neutralColor"
+            android:contentDescription="@string/switch_theme"
+            android:onClick="onButtonThemeSwitcherClick" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textVisualInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:autoSizeMaxTextSize="45sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="end|bottom"
+        android:maxLines="6"
+        android:text="0"
+        android:textColor="?attr/visualInputColor"
+        tools:ignore="HardcodedText"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.1"
+        android:autoSizeMaxTextSize="38sp"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="end|bottom"
+        android:maxLines="2"
+        android:text="0"
+        android:onClick="onTextResultClick"
+        android:textColor="?attr/resultColor"
+        tools:ignore="HardcodedText"
+        tools:targetApi="o" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonCalculatorBackspace"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorBackspaceClick"
+            android:text="⌫"
+            android:textSize="28sp"
+            android:textColor="@color/orange"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorOpenBracket"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorOpenBracketClick"
+            android:text="("
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorCloseBracket"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorCloseBracketClick"
+            android:text=")"
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorDivide"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorDivideClick"
+            android:text="÷"
+            android:textColor="@color/orange"
+            android:textSize="38sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/buttonDigit7"
+        style="@style/CalculatorButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:enabled="true"
+        android:onClick="onButtonDigit7Click"
+        android:text="7"
+        android:textColor="?attr/digitColor"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonDigit8"
+        style="@style/CalculatorButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:enabled="true"
+        android:onClick="onButtonDigit8Click"
+        android:text="8"
+        android:textColor="?attr/digitColor"
+        tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDigit9"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit9Click"
+            android:text="9"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorMultiply"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorMultiplyClick"
+            android:text="×"
+            android:textSize="35sp"
+            android:textColor="@color/orange"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonDigit4"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit4Click"
+            android:text="4"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDigit5"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit5Click"
+            android:text="5"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDigit6"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit6Click"
+            android:text="6"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorMinus"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorMinusClick"
+            android:text="—"
+            android:textSize="35sp"
+            android:textColor="@color/orange"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonDigit1"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit1Click"
+            android:text="1"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDigit2"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit2Click"
+            android:text="2"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDigit3"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit3Click"
+            android:text="3"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorPlus"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorPlusClick"
+            android:text="+"
+            android:textSize="40sp"
+            android:textColor="@color/orange"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonCalculatorClear"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorClearClick"
+            android:text="C"
+            android:textColor="@color/orange"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDigit0"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonDigit0Click"
+            android:text="0"
+            android:textColor="?attr/digitColor"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorDot"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="onButtonCalculatorDotClick"
+            android:text="•"
+            android:textColor="?attr/digitColor"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonCalculatorEqual"
+            style="@style/CalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="onButtonCalculatorEqualClick"
+            android:text="＝"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

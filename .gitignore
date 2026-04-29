@@ -1,0 +1,32 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+
+# Secrets / local config
+.env
+.env.*
+local.properties
+google-services.json
+*.jks
+*.keystore
+
+# Archives and generated binaries
+*.apk
+*.aab
+*.exe
+*.dll
+*.pdb
+*.rar
+*.zip
+*.mp4
+*.mov
+*.avi
+*.log
+# Android / Gradle
+.gradle/
+build/
+*/build/
+app/release/

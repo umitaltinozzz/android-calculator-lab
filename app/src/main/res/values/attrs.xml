@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bgColor" format="color" />
+    <attr name="digitColor" format="color" />
+    <attr name="digitTransparencyColor" format="color" />
+    <attr name="visualInputColor" format="color" />
+    <attr name="resultColor" format="color" />
+    <attr name="neutralColor" format="color" />
+    <attr name="themeSwitcher" format="reference" />
+</resources>

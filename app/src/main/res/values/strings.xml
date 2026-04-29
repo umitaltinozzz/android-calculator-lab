@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+    <string name="textNotificationAboutClipboard">Результат скопирован в буфер обмена</string>
+    <string name="switch_theme">Сменить тему</string>
+</resources>
