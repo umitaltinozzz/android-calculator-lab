@@ -1,36 +1,36 @@
 # Android Calculator Lab
 
-![Status](https://img.shields.io/badge/status-portfolio%20archive-blue)
-![Project](https://img.shields.io/badge/type-coursework%20project-informational)
-![Stack](https://img.shields.io/badge/stack-Android%20%7C%20Java%20%7C%20Gradle-333333)
-![License](https://img.shields.io/badge/license-MIT-green)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-Native Android calculator application built as a mobile programming exercise.
+A native Android calculator application built with Java. The project focuses on UI interaction, expression handling, result rendering, and basic Android application structure.
 
-## Project Status
+## What It Does
 
-Completed Android coursework project.
-
-## Features
-
-- Calculator UI and operation handling
-- Native Android activity structure
-- Basic input and result flow
-- Coursework-focused Java implementation
+- Provides a calculator interface for numeric input and operations
+- Handles calculator-specific control flow in Java
+- Includes responsive Android layout resources
+- Demonstrates a complete small Android app with activities, resources, and Gradle setup
 
 ## Tech Stack
 
-Android, Java, Gradle
+- Android
+- Java
+- XML layouts
+- Gradle
 
-## Local Setup
+## Running Locally
 
-Open in Android Studio and sync Gradle. Local SDK configuration is intentionally excluded.
+1. Open the project in Android Studio.
+2. Sync Gradle.
+3. Run the app on an emulator or Android device.
 
 ## Repository Notes
 
-- Generated build folders and APK outputs are excluded.
-- App name metadata was left close to the original project structure.
+The repository excludes generated build folders, APK files, local SDK paths, and IDE cache files.
 
 ## License
 
-Released under the MIT License.
+MIT License.
